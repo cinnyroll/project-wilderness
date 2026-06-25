@@ -14,6 +14,7 @@
 				bee = true
 				axolotl = true
 				arrow = true
+				trader_llama = true
 				donkey = true
 				cow = true
 				chest_minecart = true
@@ -40,6 +41,7 @@
 				wolf = true
 				villager = true
 				salmon = true
+				wandering_trader = true
 				zombie_villager = true
 				tnt_minecart = true
 				goat = true
@@ -111,8 +113,8 @@
 				murmur_head = true
 				blue_jay = true
 				emu = true
-				gazelle = true
 				cachalot_echo = true
+				gazelle = true
 				tasmanian_devil = true
 				centipede_tail = true
 				rhinoceros = true
