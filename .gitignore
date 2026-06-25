@@ -1,8 +1,10 @@
 .vscode/
-.probe/
 saves/
 logs/
 crash-reports/
+coremods/
+data/
+screenshots/
 /usercache.json
 /usernamecache.json
 /supportercache.json

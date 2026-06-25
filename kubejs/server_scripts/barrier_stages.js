@@ -97,7 +97,7 @@ const barrierStageEvents = {
 
 
 
-// barrier game stage definitions that will be used by other mods
+// barrier game stage definitions used for determining what stages players are in based on the barrier stat
 global.getBarrierStage = server => {
      let b = server.persistentData.barrier
 
