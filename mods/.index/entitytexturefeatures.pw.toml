@@ -1,0 +1,18 @@
+filename = 'entity_texture_features_1.20.1-forge-7.0.8.jar'
+name = '[ETF] Entity Texture Features'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '7.0.8-forge-1.20.1'
+
+[download]
+hash = '5513f0bc97baa74b1a70bcc168def235fa8f7e3a07457be0f5f5fb53db8eb9600e12db08921b4db69178ceba9412a9aa83d7df351beea981d20662434ebc2094'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/BVzZfTc1/versions/2utF7Tal/entity_texture_features_1.20.1-forge-7.0.8.jar'
+
+[update.modrinth]
+mod-id = 'BVzZfTc1'
+version = '2utF7Tal'

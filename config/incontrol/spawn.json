@@ -1,0 +1,526 @@
+[ 
+    {
+        "mob": "minecraft:zombie",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "minecraft:spider",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "minecraft:creeper",
+        "result": "deny",
+        "gamestage": "protected"
+        
+    },
+    {
+        "mob": "minecraft:skeleton",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+
+
+
+
+    {
+        "mob": "born_in_chaos_v1:baby_skeleton",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:baby_skeleton_minion",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:baby_spider",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:baby_spider_controlled",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:barrel_zombie",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:bloody_gadfly",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:bone_imp",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:bone_imp_minion",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:bonescaller",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:bonescaller_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:controlled_baby_skeleton",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:controlled_spiritual_assistant",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:corpse_fish",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:corpse_fly",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:dark_vortex",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:decaying_zombie",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:decaying_zombie_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:decrepit_skeleton",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:diamond_termite",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:door_knight",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:door_knight_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:dread_hound",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:dread_hound_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:fallen_chaos_knight",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:felsteed",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:firelight",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:firelight_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:glutton_fish",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:infernal_spirit",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:intoxicatind_bomb_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:krampus",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:krampus_henchman",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lifestealer",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lifestealer_true_form",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lord_pumpkinhead",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lord_pumpkinhead",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lord_pumpkinhead_withouta_horse",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lord_the_headless",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:lords_felsteed",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:maggot",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:maggot",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:missionary_charge",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:missionary_raider",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:missioner",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:monstrous_easter_egg_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:mother_spider",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:mr_pumpkin",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:mr_pumpkin_controlled",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:mrs_pumpkin",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:nightmare_stalker",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:phantom_bomb_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:phantom_bomb_entity",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:phantom_creeper",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:phantom_creeper_copy",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_bomb",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_bruiser",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_dunce",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_pistol_2_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_pistol_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_spirit",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_staff_2_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkin_staff_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:pumpkinhead",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:restless_spirit",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:riding_felsteed",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:riding_lords_felsteed",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:rotten_easter_egg_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:scarlet_persecutor",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:seared_spirit",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:seared_spirit_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:senor_pumpkin",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:siamese_skeletons",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:siamese_skeletonsleft",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:siamese_skeletonsright",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:sir_pumpkinhead",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:sir_pumpkinhead_without_horse",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:sir_the_headless",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:skeleton_demoman",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:skeleton_thrasher",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:skeleton_thrasher_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:spirit_guide",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:spirit_guide_assistant",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:spiritof_chaos",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:spiritual_easter_egg_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:staffof_blindness_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:staffof_magic_arrows_2_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:staffof_magic_arrows_projectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:stimulating_bombprojectile",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:supreme_bonescaller",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:supreme_bonescaller_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:supreme_bonescaller_stage_2",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:swarmer",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:thornshell_crab",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:zombie_bruiser",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:zombie_clown",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:zombie_clown_not_despawn",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:zombie_fisherman",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+    {
+        "mob": "born_in_chaos_v1:zombie_lumberjack",
+        "result": "deny",
+        "gamestage": "protected"
+    },
+
+
+
+    {
+        "mob": "minecraft:zombie",
+        "result": "allow",
+        "gamestage": "disturbed"
+    }
+
+]

@@ -1,0 +1,29 @@
+filename = 'born_in_chaos_[Forge]1.20.1_1.7.5.jar'
+name = 'Born in Chaos'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.7.5'
+
+[download]
+hash = '8b889b43dcbdb4882a4144d41b49f7e14f567abe24041cc9577082fa6f653795796966d203bb2870c55419ee24aaa15a743ae17dc515a33d24e60f3619f5a27f'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1kcHy4de/versions/8wmEhUSt/born_in_chaos_%5BForge%5D1.20.1_1.7.5.jar'
+
+[update.modrinth]
+mod-id = '1kcHy4de'
+version = '8wmEhUSt'
+
+[[x-prismlauncher-dependencies]]
+addonId = '5sy6g3kz'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = '8BmcQJ2H'
+type = 'REQUIRED'

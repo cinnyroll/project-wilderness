@@ -1,0 +1,18 @@
+filename = 'ColdSweat-2.4.2.jar'
+name = 'Cold Sweat'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.4.2'
+
+[download]
+hash = '11c9fb632d207fa7f60d29bb12753d84dac34b3ca0813f3a201ad1b9635ec2a0c935572a43acd886be58e1ea8c198ed77b170b3159335b936e9ada50b941114b'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/uXhSmPjd/versions/arQLKRjC/ColdSweat-2.4.2.jar'
+
+[update.modrinth]
+mod-id = 'uXhSmPjd'
+version = 'arQLKRjC'

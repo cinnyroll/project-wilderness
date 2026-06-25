@@ -1,0 +1,10 @@
+{
+    "barrier_tremble": {
+        "sounds": [
+            {
+                "name": "barrier:barrier_tremble",
+                "volume": 0.25
+            }
+        ]
+    }
+}

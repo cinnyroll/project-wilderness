@@ -1,0 +1,22 @@
+filename = 'capes-1.5.2+1.20-forge.jar'
+name = 'Capes'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.5.2+1.20'
+
+[download]
+hash = 'b1ac39df33d96417dcb24e44448f7f5208947f83ba53438febb30a2c73e7dd02bf12a7bf907ed3b01bce5e5a711250c0d35b6c7f88689041c5b15b450ef3a994'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/89Wsn8GD/versions/84s3PTI1/capes-1.5.2%2B1.20-forge.jar'
+
+[update.modrinth]
+mod-id = '89Wsn8GD'
+version = '84s3PTI1'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'ordsPcFz'
+type = 'REQUIRED'
+version = 'p2GXgSkh'

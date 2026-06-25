@@ -1,0 +1,7 @@
+.vscode/
+.probe/
+saves/
+logs/
+crash-reports/
+/usercache.json
+/usernamecache.json
