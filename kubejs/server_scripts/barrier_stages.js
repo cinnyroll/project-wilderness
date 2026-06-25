@@ -13,62 +13,85 @@ const barrierStageOrder = {
     collapse: 0
 }
 
-// array of event definitions for when the barrier falls
-const barrierFallEvents = {
-    disturbed: {
-        title: "The Barrier Trembles",
-        subtitle: "Something ancient stirs.",
-        sound: "barrier:barrier_tremble"
+// single event definition table for barrier stage changes
+// each stage change can have a set of commands that will be run when the stage is entered
+// commands can be run on the server or per player
+// commands are nested under the "fall" or "mend" keys to determine if the barrier is falling or mending
+const barrierStageEvents = {
+    fall: {
+        disturbed: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Trembles","color":"yellow"}',
+                'player:title @s subtitle {"text":"Something ancient stirs."}',
+                'player:execute as @s at @s run playsound barrier:barrier_tremble master @s ~ ~ ~',
+                'server:weather thunder'
+            ]
+        },
+
+        breached: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Cracks","color":"red"}',
+                'player:title @s subtitle {"text":"The dead remember the world."}',
+                'player:execute as @s at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~'
+            ]
+        },
+
+        corrupted: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Fractures","color":"dark_purple"}',
+                'player:title @s subtitle {"text":"The world begins to decay."}',
+                'player:execute as @s at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~'
+            ]
+        },
+
+        collapse: {
+            commands: [
+                'player:title @s title {"text":"THE BARRIER FALLS","color":"dark_red"}',
+                'player:title @s subtitle {"text":"Nothing remains to hold them back."}',
+                'player:execute as @s at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~'
+            ]
+        }
     },
 
-    breached: {
-        title: "The Barrier Cracks",
-        subtitle: "The dead remember the world.",
-        sound: "minecraft:entity.ender_dragon.growl"
-    },
+    mend: {
+        protected: {
+            commands: [
+                'player:title @s title {"text":"The Barrier is Restored","color":"green"}',
+                'player:title @s subtitle {"text":"The world is safe once more."}',
+                'player:execute as @s at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~'
+            ]
+        },
+        disturbed: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Trembles","color":"yellow"}',
+                'player:title @s subtitle {"text":"Something ancient stirs."}',
+                'player:execute as @s at @s run playsound minecraft:entity.ender_dragon.ambient master @s ~ ~ ~'
+            ]
+        },
 
-    corrupted: {
-        title: "The Barrier Fractures",
-        subtitle: "The world begins to decay.",
-        sound: "minecraft:entity.wither.spawn"
-    },
+        breached: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Cracks","color":"red"}',
+                'player:title @s subtitle {"text":"The dead remember the world."}',
+                'player:execute as @s at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~'
+            ]
+        },
 
-    collapse: {
-        title: "THE BARRIER FALLS",
-        subtitle: "Nothing remains to hold them back.",
-        sound: "minecraft:entity.ender_dragon.death"
-    }
-}
+        corrupted: {
+            commands: [
+                'player:title @s title {"text":"The Barrier Fractures","color":"dark_purple"}',
+                'player:title @s subtitle {"text":"The world begins to decay."}',
+                'player:execute as @s at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~'
+            ]
+        },
 
-// array of event definitions for when the barrier rises
-const barrierMendEvents = {
-    protected: {
-        title: "The Barrier is Restored",
-        subtitle: "The world is safe once more.",
-        sound: "playsound minecraft:block.beacon.activate master"
-    },
-    disturbed: {
-        title: "The Barrier Trembles",
-        subtitle: "Something ancient stirs.",
-        sound: "minecraft:entity.ender_dragon.ambient"
-    },
-
-    breached: {
-        title: "The Barrier Cracks",
-        subtitle: "The dead remember the world.",
-        sound: "minecraft:entity.ender_dragon.growl"
-    },
-
-    corrupted: {
-        title: "The Barrier Fractures",
-        subtitle: "The world begins to decay.",
-        sound: "minecraft:entity.wither.spawn"
-    },
-
-    collapse: {
-        title: "THE BARRIER FALLS",
-        subtitle: "Nothing remains to hold them back.",
-        sound: "minecraft:entity.ender_dragon.death"
+        collapse: {
+            commands: [
+                'player:title @s title {"text":"THE BARRIER FALLS","color":"dark_red"}',
+                'player:title @s subtitle {"text":"Nothing remains to hold them back."}',
+                'player:execute as @s at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~'
+            ]
+        }
     }
 }
 
@@ -106,53 +129,42 @@ global.onBarrierStageChange = (
     oldStage,
     newStage
 ) => {
-    
-    let isFalling = 
+
+    let isFalling =
         barrierStageOrder[newStage] <
         barrierStageOrder[oldStage]
 
-    let eventData = isFalling
-        ? barrierFallEvents[newStage]
-        : barrierMendEvents[newStage]
-    
+    const branch = isFalling ? 'fall' : 'mend'
+    let eventData = barrierStageEvents[branch] && barrierStageEvents[branch][newStage]
+
     if (!eventData)
         return
 
-    server.players.forEach(player => {
+    // If the event defines a `commands` array, run those commands.
+    // Command strings that start with `player:` will be executed per-player
+    // using `player.runCommandSilent(...)`. Strings that start with
+    // `server:` (or have no prefix) will be executed once on the server
+    // using `server.runCommandSilent(...)`.
+    if (Array.isArray(eventData.commands) && eventData.commands.length > 0) {
+        // Run server-level commands first
+        eventData.commands.forEach(cmd => {
+            if (typeof cmd !== 'string') return
+            if (cmd.startsWith('player:')) return
+            const actual = cmd.startsWith('server:') ? cmd.slice(7).trim() : cmd
+            if (actual.length) server.runCommandSilent(actual)
+        })
 
-        player.runCommandSilent(
-            `title @a title {"text":"${eventData.title}"}`
-        )
-        server.runCommandSilent (
-            `title @a subtitle {"text":"${eventData.subtitle}"}`
-        )
-        server.runCommandSilent (
-            `execute as @a at @s run playsound ${eventData.sound} master @s ~ ~ ~`
-        )
-    })
-    
-    
-    /* old
-    if (newStage == "disturbed") {
-        
-        
-        
-        
-        server.runCommandSilent (
-            'title @a title {"text":"The Barrier Trembles", "color":"yellow"}'
-        )
+        // Run player-level commands for each player
+        server.players.forEach(player => {
+            eventData.commands.forEach(cmd => {
+                if (typeof cmd !== 'string') return
+                if (!cmd.startsWith('player:')) return
+                const actual = cmd.slice(7).trim()
+                if (actual.length) player.runCommandSilent(actual)
+            })
+        })
 
-        server.runCommandSilent (
-            'title @a subtitle {"text":"Something ancient stirs."}'
-        )
-
-        server.runCommandSilent (
-            'execute as @a at @s run playsound minecraft:entity.ender_dragon.ambient master @s ~ ~ ~'
-        )
-
-        server.runCommandSilent (
-            'weather thunder'
-        )
+        return
     }
-        */
+
 }
